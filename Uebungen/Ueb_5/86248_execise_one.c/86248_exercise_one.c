@@ -4,9 +4,9 @@ int main() {
     int entry;
     scanf("%d", &entry);
     if (entry == 0){
-        printf("\n");
+        printf("");
     }else if(entry == 1){
-        printf("\n");
+        printf("");
     }else {
         for (int i = 2; i <= entry; ++i) {
             if (i % 2 == 0) {
