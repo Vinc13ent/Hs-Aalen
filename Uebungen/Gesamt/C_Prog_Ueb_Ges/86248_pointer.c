@@ -1,7 +1,6 @@
 ﻿#include <stdlib.h>
 #include <stdio.h>
 
-void read (double* p, int size);
 
 void read (double* p, unsigned int size){
     for (int i = 0; i < size; i++) {
