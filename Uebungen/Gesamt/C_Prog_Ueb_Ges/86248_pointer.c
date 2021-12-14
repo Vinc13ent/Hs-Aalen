@@ -1,6 +1,8 @@
 ﻿#include <stdlib.h>
 #include <stdio.h>
 
+void read (double* p, int size);
+
 void read (double* p, unsigned int size){
     for (int i = 0; i < size; i++) {
         scanf("%lf", &p[i]);
@@ -26,6 +28,9 @@ int main (){
         return 0;
     }
     double *p = malloc(size*sizeof (double ));
+    if (p == NULL){
+        return 0;
+    }
     read(p, size);
     times(p, size);
     print(p, size);
